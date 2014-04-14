@@ -1,4 +1,12 @@
-.classpath
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
 .project
-.settings/
-bin/
+.classpath
+.settings
+target
+.DS_Store
+bin
