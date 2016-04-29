@@ -3,18 +3,18 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.zsis.barebone</groupId>
+  <groupId>org.ps.barebone</groupId>
   <artifactId>barebone-parent</artifactId>
   <packaging>pom</packaging>
   <version>1.0</version>
 
-  <name>Z Sistemas: Barebone Parent</name>
-  <url>http://www.zsistemas.com.br/barebone</url>
+  <name>${project.organization.name}: ${project.artifactId}</name>
+  <url>http://www.ps.org/barebone</url>
   <inceptionYear>2010</inceptionYear>
 
   <organization>
-    <name>Z Sistemas Ltda ME</name>
-    <url>http://www.zsistemas.com.br</url>
+    <name>ORG PS</name>
+    <url>http://www.ps.org</url>
   </organization>
 
   <properties>
@@ -22,8 +22,8 @@
     <version.compiler.plugin>2.1</version.compiler.plugin>
     <version.surefire.plugin>2.4.3</version.surefire.plugin>
     <version.resources.plugin>2.4.3</version.resources.plugin>
-    <version.javadoc.plugin>2.6.1</version.javadoc.plugin>
-    <version.versions.plugin>1.2</version.versions.plugin>
+    <version.javadoc.plugin>2.10.3</version.javadoc.plugin>
+    <version.versions.plugin>2.2</version.versions.plugin>
 
     <!-- Versões de jars -->
     <version.commons-logging.jar>1.1.1</version.commons-logging.jar>
@@ -155,7 +155,6 @@
           <target>${java.target.version}</target>
           <debug>true</debug>
           <optimize>true</optimize>
-          <showDeprecations>true</showDeprecations>
         </configuration>
       </plugin>
       
