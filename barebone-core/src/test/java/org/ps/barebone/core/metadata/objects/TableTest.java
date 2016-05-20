@@ -31,19 +31,5 @@ import org.junit.Test;
  */
 public class TableTest {
 
-	@Test public void testEquals() {
-		Table t1 = Table.newInstance("TESTE", null, null, null, null);
-		Table t2 = Table.newInstance("TESTE", null, new ArrayList<Column>(), null, null);
-		
-		assertArrayEquals("With the same name must be return true!", new Object[] {t1, t2, t1}, new Object[] {t2, t1, t1});
-		assertNotSame("When is null equals must be return false!", t1, null);
-	}
-	
-	@Test public void testHashCode() {
-		Table t1 = Table.newInstance("TESTE", null, null, null, null);
-		Table t2 = Table.newInstance("TESTE", null, new ArrayList<Column>(), null, null);
-
-		assertTrue("When equals return true the hashCode must be return the same value!", t1.hashCode() == t2.hashCode());
-	}
 	
 }
